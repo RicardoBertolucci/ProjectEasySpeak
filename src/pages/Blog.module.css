@@ -1,0 +1,15 @@
+.backgroundAccordion {
+  background-color: #b3b7ee;
+  height: 100vh;
+  position: relative;
+}
+
+.containerAccordion {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 80%;
+}
