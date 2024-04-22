@@ -27,7 +27,7 @@ function App() {
           <Route path="/Blog" element={<Blog />} />
           <Route path="/Query" element={<Query />} />
           <Route path="/Password" element={<Password />} />
-          <Route path="/Register" element={<Register />} />
+          <Route path="/SignUp" element={<Register />} />
         </Routes>
       </BrowserRouter>
     </div>
