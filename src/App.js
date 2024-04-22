@@ -14,6 +14,8 @@ import Blog from './pages/Blog';
 import Query from './pages/Query';
 import Password from './pages/Password';
 import Register from './pages/Register';
+import Patient from './pages/Patient';
+import Audiologist from './pages/Audiologist';
 
 
 function App() {
@@ -27,7 +29,9 @@ function App() {
           <Route path="/Blog" element={<Blog />} />
           <Route path="/Query" element={<Query />} />
           <Route path="/Password" element={<Password />} />
-          <Route path="/SignUp" element={<Register />} />
+          <Route path="/Register" element={<Register />} />
+          <Route path="/Patient" element={<Patient />} />
+          <Route path="/Audiologist" element={<Audiologist />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,11 +1,25 @@
-import React from 'react'
+import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Importe o componente Link
+import styles from "./Register.module.css";
 
-const Register = () => {
+const SignUpPage = () => {
   return (
-    <div>
-      Register
+    <div className={styles.backgroundForms}>
+      <div className={styles.container}>
+        <form className={styles.forms}>
+          <h1 className={styles.titleForms}>Cadastro</h1>
+          <div className={styles.selectionButtons}>
+            <Link to="/patient" className={styles.selectionButton}>
+              Paciente
+            </Link>
+            <Link to="/audiologist" className={styles.selectionButton}>
+              Fonoaudiólogo
+            </Link>
+          </div>
+        </form>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Register
+export default SignUpPage;

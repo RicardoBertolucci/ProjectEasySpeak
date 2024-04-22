@@ -31,7 +31,7 @@ const EasySpeak = () => {
           />
         </label>
         <Link to="/password" className={styles.anchor}>Esqueci minha senha</Link>
-        <Link to="/SignUp" className={styles.anchor}>Cadastre-se</Link>
+        <Link to="/register" className={styles.anchor}>Cadastre-se</Link>
         
         <button className={styles.buttonSubmit}>Entrar</button>
       </form>
