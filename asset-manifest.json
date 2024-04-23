@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ProjectEasySpeak/static/css/main.90afe7a2.css",
-    "main.js": "/ProjectEasySpeak/static/js/main.93ff60ff.js",
+    "main.js": "/ProjectEasySpeak/static/js/main.2abb6ce4.js",
     "static/js/453.5e344c26.chunk.js": "/ProjectEasySpeak/static/js/453.5e344c26.chunk.js",
     "static/media/Home.svg": "/ProjectEasySpeak/static/media/Home.042f0222ab5f2cb33ebdef4797723653.svg",
     "index.html": "/ProjectEasySpeak/index.html",
     "main.90afe7a2.css.map": "/ProjectEasySpeak/static/css/main.90afe7a2.css.map",
-    "main.93ff60ff.js.map": "/ProjectEasySpeak/static/js/main.93ff60ff.js.map",
+    "main.2abb6ce4.js.map": "/ProjectEasySpeak/static/js/main.2abb6ce4.js.map",
     "453.5e344c26.chunk.js.map": "/ProjectEasySpeak/static/js/453.5e344c26.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90afe7a2.css",
-    "static/js/main.93ff60ff.js"
+    "static/js/main.2abb6ce4.js"
   ]
 }
