@@ -24,7 +24,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/https://ricardobertolucci.github.io" element={<Home />} />
+          <Route path="/ProjectEasySpeak" element={<Home />} />
           <Route path="/EasySpeak" element={<EasySpeak />} />
           <Route path="/Blog" element={<Blog />} />
           <Route path="/Query" element={<Query />} />
