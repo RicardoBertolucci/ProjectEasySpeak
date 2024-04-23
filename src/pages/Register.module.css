@@ -46,6 +46,8 @@
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  width: 141.39px;
+  text-align: center;
 }
 
 .selectionButton:hover {
@@ -58,4 +60,9 @@
 
 .selectionButton:last-child {
   margin-right: 0;
+}
+
+.backEasyspeak {
+  color: #fff;
+  text-decoration: none;
 }
