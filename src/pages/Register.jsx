@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom"; // Importe o componente Link
 import styles from "./Register.module.css";
 
@@ -16,6 +16,7 @@ const SignUpPage = () => {
               Fonoaudiólogo
             </Link>
           </div>
+          <Link to="/easyspeak" className={styles.backEasyspeak}>Voltar</Link>
         </form>
       </div>
     </div>

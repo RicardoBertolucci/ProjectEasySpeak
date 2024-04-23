@@ -4,39 +4,46 @@ body {
 
 .backgroundHome {
   background-color: #b3b7ee;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contentText {
   width: 90%;
   margin: 0 auto;
-  padding: 2rem 0 0 0;
+  padding: 2rem 0;
   font-size: 22px;
   font-family: "JetBrains Mono", monospace;
-  text-align: left;
+  text-align: justify; /* Justifica o texto */
   line-height: 2rem;
+  z-index: 1; /* Garante que o primeiro bloco de texto esteja acima de tudo */
 }
 
 .contentDiv {
   width: 90%;
-  margin: 2rem auto 0;
-
+  margin-top: -3rem; /* Empurra o segundo bloco para cima para sobrepor o primeiro bloco */
   display: flex;
   gap: 2%;
+  justify-content: center; /* Centraliza os elementos */
+  align-items: flex-start; /* Alinha os itens ao início */
+  z-index: 1; /* Garante que o segundo bloco esteja acima de tudo */
 }
 
 .contentDiv > img {
-  width: 50%;
+  width: 100%;
+  object-fit: cover; /* Garante que a imagem cubra todo o espaço */
 }
 
-.contentDiv > div { 
-  width: 40%;
+.contentDiv > div {
+  width: calc((100% - 306px - 4%)); /* Ajusta a largura para deixar espaço para a imagem e o botão */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.contentDiv > div > .paragraphHome { 
+.contentDiv > div > .paragraphHome {
   font-size: 22px;
   font-family: "JetBrains Mono", monospace;
   margin: 0;
@@ -44,26 +51,43 @@ body {
 
 .link {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
-.buttonLogin { 
-  width: 40%;
-  margin: 0 auto;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-
+.buttonLogin {
   border: none;
   width: 306px;
   height: 76px;
   border-radius: 1rem;
-  background-color: #2433BE52;
-
+  background-color: #2433be52;
   font-size: 22px;
   font-family: "JetBrains Mono", monospace;
   color: #fff;
   cursor: pointer;
+  text-align: center;
+  margin-top: 2rem; /* Adiciona espaço entre o botão e o bloco de texto */
+}
 
-  text-align: unset;
+/* Regras de mídia para dispositivos menores */
+@media (max-width: 768px) {
+  .contentText {
+    font-size: 18px;
+    line-height: 1.8rem;
+  }
+
+  .contentDiv {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contentDiv > img {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .contentDiv > div {
+    width: 100%;
+    max-width: 90%;
+  }
 }

@@ -1,15 +1,27 @@
 .backgroundAccordion {
   background-color: #b3b7ee;
-  height: 100vh;
+  min-height: 100vh; /* Usamos min-height para garantir que o plano de fundo se estenda pelo menos até o final da tela */
   position: relative;
 }
 
 .containerAccordion {
   position: absolute;
-  top: 5%;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  top: 10%; /* Ajuste a distância do topo conforme necessário */
+  right: 5%; /* Ajuste a distância da direita conforme necessário */
+  left: 5%; /* Ajuste a distância da esquerda conforme necessário */
+  bottom: 10%; /* Ajuste a distância do fundo conforme necessário */
   margin: auto;
-  width: 80%;
+  width: 90%; /* Reduzimos a largura para 90% para deixar um espaço nas laterais */
+}
+
+/* Adicionamos regras de media queries para ajustar o layout em telas menores */
+
+@media (max-width: 768px) {
+  .containerAccordion {
+    top: 20%; /* Ajuste a distância do topo para telas menores */
+    right: 2%; /* Ajuste a distância da direita para telas menores */
+    left: 2%; /* Ajuste a distância da esquerda para telas menores */
+    bottom: 20%; /* Ajuste a distância do fundo para telas menores */
+    width: 96%; /* Reduzimos ainda mais a largura para 96% em telas menores */
+  }
 }
