@@ -1,0 +1,92 @@
+.backgroundForms {
+  background-color: #b3b7ee;
+  height: calc(100vh - 80px);
+}
+
+.forms {
+  background: #6873d5;
+  position: absolute;
+  width: 400px;
+  height: 575px;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleForms {
+  font-size: 40px;
+  font-family: "JetBrains Mono", monospace;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.fieldForms {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.fieldForms > span {
+  font-size: 20px;
+  font-family: "Jetbrains Mono", monospace;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: .5rem;
+}
+
+.fieldForms > input {
+  padding: 0;
+  border: 0;
+  height: 32px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.anchor {
+  color: #fff;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-size: 14px;
+  font-family: "Jetbrains Mono", monospace;
+}
+
+.anchor:hover {
+  color: #b3b7ee;
+}
+
+.buttonSubmit {
+  border: none;
+  width:  100%;
+  margin-top: .75rem;
+  border-radius: 1rem;
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  padding: .25rem 0;
+  transition: .5s;
+}
+
+.buttonSubmit:hover {
+  transform: scale(1.02);
+  background-color: #00000000;
+  border: 1px solid #000;
+}
+
+.backRegister {
+  text-decoration: none;
+  color: #fff;
+  margin: 1.5rem 0 0 0;
+  position: absolute;
+  top: 87%;
+}

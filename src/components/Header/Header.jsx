@@ -11,7 +11,6 @@ const Navbar = () => {
       <Link to="/" className={styles.anchor}>Home</Link>
       <Link to="/easyspeak" className={styles.anchor}>EasySpeak</Link>
       <Link to="/blog" className={styles.anchor}>Blog</Link>
-      <Link to="/query" className={styles.anchor}>Agende sua consulta</Link>
     </nav>
   )
 }

@@ -1,11 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Query.module.css";
+import API from "../services/Api";
 
 const Query = () => {
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
+  const [fonos, setFonos] = useState([]);
+
+  useEffect(() => {
+    FetchData()
+  }, [])
+
+  const FetchData = async () => {
+    const response = await API.fetchDoctors()
+    setFonos(response)
+  }
 
   const handleChange = (e) => {
     setEmail(e.target.value);

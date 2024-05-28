@@ -16,9 +16,10 @@ import Password from './pages/Password';
 import Register from './pages/Register';
 import Patient from './pages/Patient';
 import Audiologist from './pages/Audiologist';
-
+import { useAuth } from './contexts/authContext';
 
 function App() {
+  const { auth } = useAuth();
   return (
     <div className="App">
       <BrowserRouter>
@@ -27,7 +28,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/EasySpeak" element={<EasySpeak />} />
           <Route path="/Blog" element={<Blog />} />
-          <Route path="/Query" element={<Query />} />
+          <Route path="/Query" element={auth ? <Query /> : <EasySpeak />} />
           <Route path="/Password" element={<Password />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Patient" element={<Patient />} />
